@@ -15,7 +15,7 @@
                 Branch_Master = Branch_Master.trim()
 
 
-
+/*
                 if (Branch_Name == Branch_Master) {
                 stage('SonarQube Analysis') {
                 def pom = readMavenPom()
@@ -45,7 +45,7 @@
                 }
                                     
                                     }    
-
+*/
                stage ('Build')
                                   def jdk = tool name: '1.7.0_79'
                 def mvnHome = tool name: '3.3.9'
