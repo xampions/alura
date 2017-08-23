@@ -48,7 +48,7 @@
 */
                stage ('Build')
                 def jdk = tool name: '1.7.0_79'
-                def mvnHome = tool name: '1.8'
+                def mvnHome = tool name: '1.7.0_79'
             	env.JAVA_HOME = "${jdk}"
             	bat "${mvnHome}/bin/mvn clean install"
 
