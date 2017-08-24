@@ -72,7 +72,7 @@ public class ArgentumBean implements Serializable {
 		
 		negociacoes = negociacoes
 						.stream();
-						.filter(n -> n.getData().after(de) && n.getData().before(ate));
+						.filter(n -> n.getData().after(de) == n.getData().before(ate));
 						.collect(Collectors.toList());
 	}
 	
