@@ -71,8 +71,8 @@ public class ArgentumBean implements Serializable {
 		negociacoes = new ClienteWebService().getNegociacoes();
 		
 		negociacoes = negociacoes
-						.stream()
-						.filter(n -> n.getData().after(de) && n.getData().before(ate))
+						.stream();
+						.filter(n -> n.getData().after(de) && n.getData().before(ate));
 						.collect(Collectors.toList());
 	}
 	
