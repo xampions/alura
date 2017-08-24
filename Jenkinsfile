@@ -53,9 +53,9 @@
             	bat "${mvnHome}/bin/mvn clean install"
 
 
-               stage ('Warnings-Publisher')
+             /*  stage ('Warnings-Publisher')
                 warnings canComputeNew: false, canResolveRelativePaths: false, consoleParsers: [[parserName: 'Java Compiler (javac)'], [parserName: 'JavaDoc Tool'], [parserName: 'Maven']], defaultEncoding: '', excludePattern: '', healthy: '', includePattern: '', messagesPattern: '', unHealthy: '' 
-               
+               */
                stage ('Archive')
                           	step([$class: 'ArtifactArchiver', artifacts: '**/*.war', fingerprint: true])
                    
