@@ -47,10 +47,10 @@
                                     }    
 */
                stage ('Build')
-                def jdk = tool name: '1.8.0_131'
+                def jdk = tool name: '1.7.0_79'
                 def mvnHome = tool name: '3.5'
             	env.JAVA_HOME = "${jdk}"
-            	bat "${mvnHome}/bin/mvn clean install"
+            	bat "${mvnHome}\bin\mvn clean install"
 
 
                stage ('Warnings-Publisher')
