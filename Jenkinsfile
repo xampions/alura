@@ -32,7 +32,7 @@
                 # If not set, SonarQube starts looking for source code from the directory containing
                 # the sonar-project.properties file.
                 sonar.sources=."""
-                
+                !
                 archive 'sonar-project.properties'                
                 // requires SonarQube Scanner 2.8+
                 def jdk8 = tool name: '1.8.0_101'
